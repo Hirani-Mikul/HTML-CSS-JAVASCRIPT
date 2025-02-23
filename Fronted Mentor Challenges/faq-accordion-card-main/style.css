@@ -1,0 +1,149 @@
+:root {
+  font-size: 62.5%;
+  --primaryRed: hsl(14, 88%, 65%);
+  --primaryBlue: hsl(238, 29%, 16%);
+  --neutralDarkBlue: hsl(237, 12%, 33%);
+  --neutralBlue: hsl(240, 6%, 50%);
+}
+::before,
+::after {
+  content: '';
+  position: absolute;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 1.2rem;
+  font-size: 400;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+    no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 92rem;
+  margin: 0 auto;
+  min-height: 40rem;
+  display: flex;
+  background-color: white;
+  border-radius: 1rem;
+  /* position: relative; */
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
+  /* background: url('./images/bg-pattern-desktop.svg') transparent; */
+}
+.left-wrapper {
+  position: relative;
+  width: 38.8rem;
+  background-image: url('./images/illustration-woman-online-desktop.svg');
+  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.left-wrapper::before {
+  width: 50%;
+  height: 50%;
+  /* width: 10rem; */
+  /* height: 10rem; */
+  left: -25%;
+  top: 45%;
+  /* transform: translateY(-50%); */
+  z-index: 10;
+  background-image: url('./images/illustration-box-desktop.svg');
+  background-position: center;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.right-wrapper {
+  width: 50%;
+  height: 100%;
+}
+.right-wrapper h2 {
+  font-size: 2rem;
+  margin: 2rem 0.9rem;
+}
+.faq__items {
+  height: calc(100% - 6rem);
+  width: 100%;
+}
+.faq {
+  /* height: 4rem; */
+  max-height: 4rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  padding: 0.9rem;
+  border-bottom: 0.1rem solid hsl(240, 5%, 91%);
+  /* position: relative; */
+  transition: max-height 200ms linear;
+}
+.active {
+  max-height: 10rem;
+  height: auto;
+}
+/* .faq::after {
+  position: absolute;
+  content: '';
+  bottom: -2rem;
+  width: 100%;
+  border: 0.1rem solid hsl(240, 5%, 91%);
+} */
+.faq h4 {
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+.faq h4::after {
+  width: 1rem;
+  right: 0.2rem;
+  top: 50%;
+  transform: translateY(-50%) rotateZ(0deg);
+  height: 1rem;
+  background-image: url('./images/icon-arrow-down.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 200ms ease-in-out;
+}
+.faq h4:hover {
+  color: var(--primaryRed);
+  cursor: pointer;
+}
+.active h4 {
+  color: var(--primaryBlue);
+  font-weight: 600;
+}
+.active h4::after {
+  transform: translateY(-50%) rotateZ(180deg);
+}
+.faq p {
+  /* transform: translateY(100%); */
+  clip-path: circle(0% at bottom);
+  font-size: 1.3rem;
+  transition: all 200ms linear;
+}
+.active p {
+  clip-path: circle(100%);
+  /* transform: translateY(0); */
+}
+/* 
+@media only screen and (max-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-wrapper {
+    width: 100%;
+  }
+  .right-wrapper {
+    width: 100%;
+  }
+} */
