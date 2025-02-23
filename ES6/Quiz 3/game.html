@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="./icons/css/all.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <header>
+          <nav>
+            <div class="fas fa-bars icon"></div>
+            <a class="btn2 fas fa-home icon" href="index.html"></a>
+          </nav>
+          <nav>
+            <div id="total-time">00:00</div>
+            <div id="hint-btn" class="fas fa-lightbulb icon"></div>
+            <div id="lifelineBtn">50%</div>
+          </nav>
+        </header>
+        <div class="hud-items" id="display-area">
+          <div class="hud-items" id="countdown-area">
+            <h2 id="score">Score: 0</h2>
+            <h3>Time Left</h3>
+            <h1 id="countdown-timer">60s</h1>
+          </div>
+          <div class="hidden hud-items" id="hint-area">
+            <h2 id="hint"></h2>
+          </div>
+        </div>
+        <div class="question-container">
+          <div class="question-part">
+            <div>
+              <h2 id="question">This is the question here?</h2>
+            </div>
+          </div>
+          <div class="choice-part">
+            <div class="choice-part-box">
+              <div class="parent-choice-container">
+                <div class="choice-container">
+                  <p class="choice-letter">A</p>
+                  <p class="choice-text" data-number="1">Choice A</p>
+                </div>
+              </div>
+              <div class="parent-choice-container">
+                <div class="choice-container">
+                  <p class="choice-letter">B</p>
+                  <p class="choice-text" data-number="2">Choice B</p>
+                </div>
+              </div>
+            </div>
+            <div class="choice-part-box">
+              <div class="parent-choice-container">
+                <div class="choice-container">
+                  <p class="choice-letter">C</p>
+                  <p class="choice-text" data-number="3">Choice C</p>
+                </div>
+              </div>
+              <div class="parent-choice-container">
+                <div class="choice-container">
+                  <p class="choice-letter">D</p>
+                  <p class="choice-text" data-number="4">Choice D</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/questionsData.js"></script>
+    <script src="./scripts/game.js"></script>
+  </body>
+</html>

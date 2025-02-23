@@ -1,0 +1,107 @@
+header {
+  display: flex;
+}
+header > * {
+  width: 100%;
+}
+header > :first-child {
+  padding: 1rem 1rem 0 1rem;
+}
+header nav {
+  display: flex;
+}
+.container {
+  border: 1rem groove rgb(235, 238, 35);
+  border-top: none;
+  border-bottom: none;
+  justify-content: space-between;
+}
+.flex-justify-space-between {
+  display: flex;
+  justify-content: space-evenly;
+}
+#hud {
+  max-height: 7rem;
+  border-top: 1rem groove aqua;
+}
+#hud div {
+  display: flex;
+  border: 1rem groove green;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  background-color: rgb(18, 116, 161);
+  border-top: none;
+  width: 30%;
+  padding: 1rem;
+}
+
+#game {
+  padding: 2rem;
+}
+#game > form {
+  width: 100%;
+}
+#game > h2 {
+  color: green;
+  letter-spacing: 1rem;
+  padding: 1rem;
+}
+form {
+  font-size: 1.8rem;
+}
+input {
+  width: 30rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  color: green;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 14px 0 rgba(0, 255, 0, 0.5);
+}
+#skip {
+  margin-bottom: 10rem;
+}
+input::placeholder {
+  font-size: 1.8rem;
+  color: #aaa;
+}
+#msg {
+  width: 100%;
+}
+.text {
+  color: rgb(92, 7, 161);
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+  animation: correct-answer-text 2s linear;
+  opacity: 0;
+}
+button {
+  cursor: pointer;
+}
+#score {
+  color: yellow;
+}
+.text:last-child {
+  color: rgb(185, 138, 8);
+}
+
+#scrambleText:hover {
+  cursor: default;
+  transform: scale(1.2);
+  transition: transform 0.5s ease-out;
+}
+
+@keyframes correct-answer-text {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

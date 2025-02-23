@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" href="../css/app.css" />
+    <link rel="stylesheet" href="../css/game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-center flex-column">
+        <h1 id="final-recent-score">0</h1>
+        <form class="flex-column flex-center">
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Username"
+          />
+          <button disabled id="saveBtn" onclick="savescore(event)" class="btn">
+            Save
+          </button>
+        </form>
+        <a class="btn" href="../html/game.html">Play Again</a>
+        <a class="btn" href="../index.html">Home</a>
+      </div>
+    </div>
+    <script src="../js/result.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+phobic
+shame
+alive
+false
+blind
