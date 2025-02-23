@@ -1,0 +1,76 @@
+:root {
+  background-color: #eee;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  position: relative;
+}
+#grid {
+  width: 50%;
+  height: 50%;
+  display: grid;
+  justify-content: center;
+  grid-template: repeat(3, 6rem) / repeat(3, 6rem);
+  /* grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+}
+/* #grid::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+} */
+.cells {
+  background-color: rgb(27, 27, 27);
+  border-right: 0.1rem solid white;
+  border-bottom: 0.1rem solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  position: relative;
+}
+/* .cells:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(158, 157, 157, 0.671);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.overlay h2 {
+  font-size: 3rem;
+  color: rgb(6, 6, 240);
+}
+.btn {
+  font-size: 2rem;
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+}

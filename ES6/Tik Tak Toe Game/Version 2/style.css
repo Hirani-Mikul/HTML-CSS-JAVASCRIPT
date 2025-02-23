@@ -1,0 +1,65 @@
+:root {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #dadad6;
+}
+.overlay {
+  display: none;
+}
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#grid {
+  width: 35rem;
+  height: 35rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.cells {
+  background-color: black;
+  border: 0.1rem solid white;
+}
+.texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.texts h1 {
+  font-size: 5rem;
+  margin: 0;
+}
+.turn-text {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.turn-text > * {
+  flex: 1;
+}
+.turn-text div {
+  display: flex;
+  flex-direction: column;
+}
