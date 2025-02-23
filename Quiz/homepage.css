@@ -1,0 +1,93 @@
+:root {
+  background-color: #ecf5ff;
+}
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.homepageContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.homepageContainer > * {
+  width: 100%;
+}
+.homepageBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homepageBtns h1 {
+  color: rgba(0, 255, 255);
+  margin-bottom: 50px;
+}
+.btn {
+  font-family: monospace;
+  font-size: 18px;
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+  border: 2px ridge rgb(11, 224, 75);
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(0, 255, 34);
+  background-color: white;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 14px 0 rgba(14, 129, 20, 0.5);
+  transform: translateY(-2px);
+  transform: translateX(2px);
+  transition: transform 150ms;
+}
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Highscore  CSS */
+#highscoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.highscorelist {
+  border: 5px ridge green;
+  margin: 15px auto 15px auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+}
+#sub-container-High h1 {
+  text-align: center;
+  color: rgb(21, 255, 0);
+}
+.lists {
+  border-bottom: 2px solid rgb(10, 161, 103);
+  margin: 15px;
+  color: green;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+}
+#listingScore {
+  list-style: none;
+}
+.lists:hover {
+  color: rgb(26, 248, 56);
+  transform: scale(1.1);
+}

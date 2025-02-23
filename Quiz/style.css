@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(100, 100, 200, 0.5);
+}
+.container {
+  background-color: rgba(0, 255, 255);
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  border: 5px ridge blue;
+}
+
+.container .main-heading {
+  text-decoration: double underline purple;
+  margin-bottom: 10px;
+  color: green;
+}
+#quiz-section {
+  text-align: left;
+  background-color: rgb(88, 179, 108);
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  border: 3px groove red;
+}
+#quiz-section form {
+  border: 5px ridge green;
+  padding: 10px;
+}
+#quiz-section form select {
+  border: 2px solid rgb(4, 53, 4);
+  border-radius: 20px;
+  background-color: cyan;
+  width: 200px;
+  padding: 5px;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+#quiz-section form select option {
+  background-color: rgba(181, 206, 42, 0.6);
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+#quiz-section form select:hover {
+  border-color: red;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: green;
+  color: blue;
+  font-weight: bold;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+}
+button[disabled]:hover {
+  cursor: not-allowed;
+}
+#btn {
+  text-align: center;
+}
+#next {
+  float: right;
+}
+#next,
+#prev {
+  border-top: 3px groove darkgoldenrod;
+  border-left: 6px ridge darkgoldenrod;
+  border-right: 4px ridge darkgoldenrod;
+  border-bottom: 4px ridge darkgoldenrod;
+  background-color: rgb(240, 210, 78);
+}
+
+#hud {
+  margin: 20px;
+  color: rgb(255, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#score {
+  text-align: center;
+}
+#progressBar {
+  margin: 10px;
+  width: 150px;
+  height: 25px;
+  border: 2px solid #24649b;
+}
+#progressBarFull {
+  height: 25px;
+  width: 0%;
+  background-color: #24649b;
+}
+.neutral {
+  color: white;
+}
+.wrong {
+  color: red;
+}
+.correct {
+  color: yellow;
+}
+
+/* Result Page */
+.endResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+#resultForm input {
+  margin-top: 50px;
+  width: 150px;
+  font-size: 15px;
+  border: none;
+  padding: 5px;
+  outline: none;
+  box-shadow: 0 10px 14px 0 rgba(13, 151, 36, 0.5);
+}
+#resultForm input::placeholder {
+  color: #aaa;
+}
+
+#final-score {
+  color: rgb(170, 99, 6);
+}
