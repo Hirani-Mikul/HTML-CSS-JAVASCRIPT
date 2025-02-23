@@ -1,0 +1,72 @@
+:root {
+  font-size: 62.5%;
+  background-color: #eef5fe;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+  font-size: 2rem;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+form {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+select {
+  width: 25rem;
+  padding: 1rem;
+  outline: none;
+  color: blue;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+}
+option {
+  font-size: 1.5rem;
+  color: green;
+}
+h3 {
+  width: 80%;
+  margin: 1rem auto;
+  border-bottom: 0.2rem solid green;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.container > * {
+  margin: 3rem;
+  width: 100%;
+}
+#imgDiv {
+  border: 0.1rem solid green;
+  background-image: url("Images/bird.jpg");
+  background-color: rgba(100, 100, 100);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 20rem;
+}

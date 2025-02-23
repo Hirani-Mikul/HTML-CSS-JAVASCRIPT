@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  border: 2px solid green;
+}
+#sub-container {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#collect {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+#collect label {
+  display: inline-block;
+  font-size: 20px;
+}
+.collect {
+  outline: none;
+  border: 2px ridge green;
+  font-size: 20px;
+  color: blue;
+  padding: 5px;
+  margin: 10px;
+}
+.collect::placeholder {
+  color: blue;
+}
+.btn {
+  background-color: rgba(0, 255, 255);
+  border: 2px solid rgba(0, 100, 255);
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+  padding: 5px;
+  margin: 10px;
+  width: 150px;
+}
+.btn:hover {
+  transform: translateX(4px) translateY(4px) scale(1.13);
+  cursor: pointer;
+  box-shadow: 0 5px 10px 0 rgba(0, 255, 255, 0.5);
+  transition: 0.2s linear;
+}
+#list {
+  width: 90%;
+  position: relative;
+  border: 2px solid green;
+  padding: 20px;
+}
+#list li {
+  padding: 5px;
+  border: 2px solid blue;
+  display: inline-flex;
+  margin: 10px;
+  font-size: 20px;
+  color: #333;
+  list-style: none;
+}
+#list li:hover {
+  cursor: default;
+  color: red;
+}
+#list:hover {
+  transform: scale(1.005);
+}
+#result {
+  padding: 10px;
+  word-wrap: break-word;
+  border: 2px solid purple;
+  width: 50%;
+  min-height: 50px;
+}
+#result h1 {
+  text-align: center;
+}

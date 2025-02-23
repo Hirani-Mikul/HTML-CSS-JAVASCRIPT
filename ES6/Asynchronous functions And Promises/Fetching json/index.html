@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US CITIES</title>
+    <style>
+      :root {
+        font-size: 62.5%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        max-width: 80rem;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 3rem;
+      }
+      p > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      p > span:hover {
+        transform: scale(1.13);
+        transition: transform 0.5s;
+      }
+      button {
+        font-size: 1.8rem;
+        font-weight: bold;
+        outline: none;
+        width: 20rem;
+        padding: 1rem;
+        background-color: white;
+        color: green;
+      }
+      button:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(0, 255, 0, 0.5);
+        transform: translateY(-0.2rem);
+        transition: transform 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="result"></p>
+      <button id="btn">Next</button>
+    </div>
+
+    <script>
+      const result = document.getElementById("result");
+      const btn = document.getElementById("btn");
+      var citiesList = [];
+      fetch("uscities.json")
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          citiesList = [...data.cities];
+          loadWords();
+          btn.addEventListener("click", () => {
+            loadWords();
+          });
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+      loadWords = () => {
+        const index = Math.floor(Math.random() * citiesList.length);
+        var city = citiesList[index];
+        result.innerHTML = `<span>City: ${city.city}</span><br/><span>State: ${city.state}</span><br/><span>Population: ${city.population}</span>`;
+      };
+    </script>
+  </body>
+</html>

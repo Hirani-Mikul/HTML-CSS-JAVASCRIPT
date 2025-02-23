@@ -1,0 +1,58 @@
+[
+  {
+    "id": "abc",
+    "name": "Bird",
+    "type": "animal",
+    "size": "Small",
+    "img": "Images/bird.jpg",
+    "col": "Blue"
+  },
+  {
+    "id": "def",
+    "name": "Frog",
+    "type": "animal",
+    "size": "Small",
+    "img": "Images/frog.png",
+    "col": "Green"
+  },
+  {
+    "id": "ghi",
+    "name": "FullHeart",
+    "type": "decorationImages",
+    "size": "Small",
+    "img": "Images/heart.png",
+    "col": "Red"
+  },
+  {
+    "id": "jkl",
+    "name": "FadingHeart",
+    "type": "decorationImages",
+    "size": "Small",
+    "img": "Images/heart2.png",
+    "col": "Red"
+  },
+  {
+    "id": "mno",
+    "name": "FlowerBouquet",
+    "type": "decorationFlowerBouquet",
+    "size": "Medium",
+    "img": "Images/flowers1.jpg",
+    "col": "Red and Green"
+  },
+  {
+    "id": "pqr",
+    "name": "FlowerBouquetVase",
+    "type": "decorationFlowerBouquet",
+    "size": "Large",
+    "img": "Images/flowers2.jpeg",
+    "col": "Red and Yellow"
+  },
+  {
+    "id": "stu",
+    "name": "FlowerBouquetAndPanda",
+    "type": "decorationFlowerBouquetPanda",
+    "size": "Extra large",
+    "img": "Images/flowers3.jpg",
+    "col": "Pink and White"
+  }
+]

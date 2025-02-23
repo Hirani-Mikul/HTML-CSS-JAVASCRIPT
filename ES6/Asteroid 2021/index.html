@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Asteroid 2021</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="600px" height="600px"></canvas>
+
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      const width = canvas.width;
+      const height = canvas.height;
+
+      const clear = () => {
+        ctx.clearRect(0, 0, width, height);
+      };
+    </script>
+    <script src="./utils.js"></script>
+    <script src="./Scripts/Libs/myLibs.js"></script>
+    <script src="./Scripts/Asteroid.js"></script>
+    <script src="./Scripts/Particle.js"></script>
+    <script src="./Scripts/Ship.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
