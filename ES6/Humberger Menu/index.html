@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humberger Menu</title>
+    <link rel="stylesheet" href="icons/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="menuBtn" class="fas fa-bars menu"></div>
+        <div class="menu-items hidden" id="menu">
+          <ul>
+            <li>Home</li>
+            <li>Search</li>
+            <li>Genre</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <h1>Movie Search</h1>
+      </header>
+      <div class="next">
+        <a href="second.html">Next</a>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const menuEl = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        if (menuEl.classList.contains("hidden")) {
+          menuEl.style.animation = "show 1s";
+          menuEl.style.animationDirection = "alternate";
+          menuEl.classList.remove("hidden");
+        } else {
+          menuEl.style.animation = "hide 1s";
+          setTimeout(() => {
+            menuEl.classList.add("hidden");
+          }, 500);
+        }
+      });
+    </script>
+  </body>
+</html>
