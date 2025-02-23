@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      onmousemove="mousePos(event)"
+      id="canvas"
+      width="600px"
+      height="600px"
+      style="background-color: rgb(100, 100, 100);"
+    ></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      const width = canvas.width;
+      const height = canvas.height;
+      function clear() {
+        ctx.clearRect(0, 0, width, height);
+      }
+    </script>
+    <script src="../LIBS/myLibs.js"></script>
+    <script src="star.js"></script>
+    <script src="planet.js"></script>
+    <script src="drawObject.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ray Casting</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #canvas {
+    background-color: black ;
+  }
+</style>
+<body>
+  
+  <canvas id="canvas" width="600px" height="600px"></canvas>
+
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    const width = canvas.width;
+    const height = canvas.height;
+
+  </script>
+
+  <script src="./Libs/myLibs.js"></script>
+  <script src="./Libs/random.js"></script>
+  <script src="boundry.js"></script>
+  <script src="ray.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
