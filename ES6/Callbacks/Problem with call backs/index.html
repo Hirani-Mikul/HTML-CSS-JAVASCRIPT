@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CallBack function Problems</title>
+</head>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+			margin: 0 auto;
+		}
+	</style>
+
+<body>
+
+	<div class="container">
+		<h1>Call back function problems</h1>
+		
+		<h3>Check the console</h3>
+		
+		<button id = "btn">Click Me</button>
+	
+	</div>
+	<script>
+		const btn = document.getElementById("btn");
+		btn.addEventListener("click", () => {
+			let a = 0,
+				b = 10;
+				
+			setTimeout(() => {
+				a++;
+				setTimeout(() => {
+					a++;
+					console.log(`Attempt 1: ${a}`);
+				}, 0);
+			}, 0);
+			
+			setTimeout(() => {
+				console.log(`Attempt 2: ${a}`);
+			}, 0);
+			a = b;
+		});
+	</script>
+</body>
+</html>
